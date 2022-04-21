@@ -24,12 +24,11 @@ const Home = ({ articles }: IProps) => {
           const props = {
             description: article.description,
             image: article.image,
-            key: article.id,
             link: "/stories/" + article.slugname,
             subtitle: article.category,
             title: article.title,
           };
-          return <Article {...props} />;
+          return <Article key={article.id} {...props} />;
         })}
         <Spacer height="48px" />
       </PublicLayout>
