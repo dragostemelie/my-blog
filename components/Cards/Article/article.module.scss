@@ -1,0 +1,33 @@
+.article {
+  display: flex;
+  gap: $page-margins;
+  margin: auto;
+  max-width: 900px;
+  padding: $page-margins;
+  & a:hover {
+    text-decoration: underline;
+  }
+  @media screen and (max-width: $md) {
+    flex-direction: column;
+  }
+}
+
+.image {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  width: 280px;
+  @media screen and (max-width: $md) {
+    aspect-ratio: unset;
+    height: 300px;
+    width: 100%;
+  }
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  & span {
+    color: $stellar-black50;
+  }
+}

@@ -1,0 +1,33 @@
+.about {
+  display: flex;
+  gap: $page-margins * 3;
+  margin: auto;
+  max-width: 900px;
+  padding: $page-margins;
+  @media screen and (max-width: $md) {
+    gap: $page-margins * 2;
+    flex-direction: column;
+  }
+}
+
+.image {
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  object-fit: cover;
+  width: 280px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
+  @media screen and (max-width: $md) {
+    margin: auto;
+    max-width: 280px;
+    width: 100%;
+  }
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  & span {
+    color: $stellar-black50;
+  }
+}

@@ -1,0 +1,35 @@
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: $page-margins;
+  margin: auto;
+  max-width: 900px;
+  padding: $page-margins;
+  & span {
+    color: $stellar-black50;
+  }
+  @media screen and (max-width: $md) {
+    flex-direction: column;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: $page-margins;
+  & code {
+    // white-space: break-spaces;
+  }
+  & pre {
+    border: 1px solid $stellar-black50;
+    border-radius: 4px;
+    background-color: $autumn-grey100;
+    padding: 10px 20px;
+    overflow-y: auto;
+  }
+  & img {
+    width: unset;
+    max-width: 100%;
+    height: auto;
+  }
+}

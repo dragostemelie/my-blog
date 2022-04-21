@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Open+Sans:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  color: $stellar-black100;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 33px;
+  font-weight: 700;
+  margin: 0;
+}
+
+h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+}
+
+h4 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+#nprogress .spinner {
+  left: calc(50% - 9px);
+  top: 32px !important;
+  right: unset;
+}

@@ -1,0 +1,29 @@
+.container {
+  align-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  height: 48px;
+  justify-content: center;
+  transition: background-color 0.3s ease-in-out;
+  width: fit-content;
+  @media screen and (max-width: $sm) {
+    width: 100%;
+  }
+}
+
+.primary {
+  background-color: white;
+  border: 1px solid $stellar-black100;
+  &:hover,
+  &:focus {
+    background-color: $autumn-grey100;
+  }
+}
+
+.text {
+  color: $stellar-black100;
+  font-size: 18px;
+  line-height: 1;
+  padding: 14px 48px;
+}

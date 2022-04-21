@@ -1,0 +1,116 @@
+.container :global {
+  align-items: center;
+  display: inline-flex;
+  flex: 1;
+  gap: $page-margins;
+  margin-left: 31px;
+  margin-right: auto;
+  nav {
+    display: flex;
+    gap: $page-margins;
+    a {
+      color: $stellar-black100;
+      cursor: pointer;
+      font-size: 20px;
+      font-weight: 400;
+      padding: 8px 2px;
+      transition: color 0.3s ease-in-out;
+      &.active,
+      &:hover {
+        color: black;
+        transform: scale(1.05);
+      }
+    }
+    @media screen and (max-width: $lg) {
+      background-color: $autumn-grey100;
+      flex-direction: column;
+      gap: 0;
+      height: 100vh;
+      inset: 0;
+      padding: 16px 8px;
+      position: absolute;
+      padding-top: 80px;
+      transform: translateY(calc(-100% - 80px));
+      transition-delay: 100ms;
+      transition: transform 0.3s ease-in;
+      z-index: -1;
+      &.open {
+        transform: translateY(0%);
+      }
+      a {
+        font-size: 20px;
+        padding: 16px 24px;
+      }
+    }
+  }
+  .bars-wrapper {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    height: 48px;
+    justify-content: center;
+    margin-left: auto;
+    width: 48px;
+    @media screen and (min-width: $lg) {
+      display: none;
+    }
+  }
+  .bars {
+    /* SETTINGS */
+    $height: 2px;
+    $size: 4px;
+    $spacing: 8px;
+    $time: 0.4s;
+    /* BAR 1 */
+    &::before {
+      content: "";
+      background-color: $stellar-black100;
+      height: $height;
+      left: 0;
+      margin-top: $spacing * -1;
+      position: absolute;
+      top: 0;
+      transition: $time;
+      width: $size * 6;
+    }
+    /* BAR 2 */
+    background-color: $stellar-black100;
+    height: $height;
+    position: relative;
+    transition: $time;
+    width: $size * 6;
+    z-index: -1;
+    /* BAR 3 */
+    &::after {
+      content: "";
+      background-color: $stellar-black100;
+      bottom: 0;
+      height: $height;
+      left: 0;
+      margin-bottom: $spacing * -1;
+      position: absolute;
+      transition: $time;
+      width: $size * 4;
+    }
+    &.open {
+      /* BAR 1 */
+      &::before {
+        background-color: $stellar-black100;
+        left: $size * 4;
+        margin-top: 0;
+        transform: rotate(-45deg)
+          translate($size * -3, ($spacing + $height) * -1);
+      }
+      /* BAR 2 */
+      background-color: transparent;
+      /* BAR 3 */
+      &::after {
+        background-color: $stellar-black100;
+        left: $size * 4;
+        margin-bottom: 0;
+        transform: rotate(45deg) translate(($spacing + $height) * -1, $size * 3);
+        width: $size * 6;
+      }
+    }
+  }
+}
