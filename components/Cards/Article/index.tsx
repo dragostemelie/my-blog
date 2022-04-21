@@ -23,6 +23,7 @@ export const Article = ({
       <div>
         <Link href={link} passHref>
           <a>
+            {/* eslint-disable-next-line */}
             <img className={styles.image} src={image} alt={title} />
           </a>
         </Link>

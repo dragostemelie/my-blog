@@ -17,9 +17,6 @@
   display: flex;
   flex-direction: column;
   gap: $page-margins;
-  & code {
-    // white-space: break-spaces;
-  }
   & pre {
     border: 1px solid $stellar-black50;
     border-radius: 4px;
@@ -28,8 +25,20 @@
     overflow-y: auto;
   }
   & img {
-    width: unset;
-    max-width: 100%;
     height: auto;
+    max-width: 100%;
+    width: unset;
+  }
+  & p > code {
+    background-color: $autumn-grey100;
+    padding: 4px;
+    color: red;
+  }
+  & ul {
+    margin-top: -10px;
+    overflow-y: auto;
+    & li:not(:last-child) {
+      margin-bottom: 12px;
+    }
   }
 }

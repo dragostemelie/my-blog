@@ -18,6 +18,7 @@ const AboutPage: NextPage = () => {
       <PublicLayout>
         <Spacer height="48px" />
         <About />
+        <Spacer height="48px" />
       </PublicLayout>
     </>
   );
