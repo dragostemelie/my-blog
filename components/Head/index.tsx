@@ -35,10 +35,10 @@ export const PageHead = ({ title, description, image, url }: Props) => {
       />
       <meta
         property="og:image"
-        // @ts-ignore
-        itemprop="image"
+        itemProp="image"
         content={image ? image : defaultMeta.image}
       />
+
       {/* Twitter Meta Tags */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta property="twitter:domain" content="" />
