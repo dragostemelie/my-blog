@@ -1,5 +1,16 @@
 [
   {
+    "id": 2,
+    "title": "Jango Player - My first React Native App",
+    "slugname": "jango-player-my-first-react-native-app",
+    "category": "React Native • Audio players",
+    "image": "https://dragostemelie.go.ro/images/articles/jango-player.png",
+    "description": "While learning react native, I decided to create a music player from scratch. The app uses the Jango API for getting songs, and also redux and typescript for ease of scalability.",
+    "content": "![Jango Player Screenshot](https://dragostemelie.go.ro/images/articles/jango-player.png)\n\nWhile learning react native, I decided to create a music player from scratch.\n\nThe app uses the [Jango API](https://www.jango.com/) for getting songs, and also redux and typescript for ease of scalability.\n\n## THE DESIGN:\n\nI designed the screens using Figma. You can check out the source [here](https://www.figma.com/file/x4gjvJakul5s0XugioTMtn/Jango-player).\n\n![Playing Screen](https://dragostemelie.go.ro/images/articles/playlist-playing.png)\n![Playlists Screen](https://dragostemelie.go.ro/images/articles/playlist-screens.png)\n\n## THE CODE\n\nYou can find the code on [Github](https://github.com/dragostemelie/jango-player). To install and test the app in an android simulator, [download the preview-build](https://github.com/dragostemelie/jango-player/raw/main/builds/jango-player-preview-build.apk). Also, check the builds folder for the custom development client if you want to run the project locally.\n",
+    "author": "Dragos",
+    "date": "2022-04-28"
+  },
+  {
     "id": 1,
     "title": "Using page lifecycle API with custom React hook",
     "slugname": "using-page-lifecycle-api-with-custom-react-hook",
@@ -11,7 +22,7 @@
     "date": "2021-10-15"
   },
   {
-    "id": 2,
+    "id": 0,
     "title": "A currency convertor with Excel VBA",
     "slugname": "a-currency-convertor-with-excel-vba",
     "category": "Excel • Visual Basic for Applications",
