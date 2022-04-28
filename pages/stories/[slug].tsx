@@ -1,11 +1,11 @@
-import Head from "next/head";
+import { GetStaticPropsContext } from "next";
 
 import articles from "data/articles.json";
 import { Article } from "components/Sections/Article";
 import { ArticleType } from "types";
+import { PageHead } from "components/Head";
 import { PublicLayout } from "components/Layouts";
 import { Spacer } from "components/UI/Spacer";
-import { GetStaticPropsContext } from "next";
 
 interface IProps {
   article: ArticleType;
@@ -14,11 +14,12 @@ interface IProps {
 const Story = ({ article }: IProps) => {
   return (
     <>
-      <Head>
-        <title>{`t.D. | ${article.title}`}</title>
-        <meta name="description" content={article.description} />
-        <meta property="og:image" content={article.image} />
-      </Head>
+      <PageHead
+        title={`t.D. | ${article.title}`}
+        description={article.description}
+        image={article.image}
+        url={`https://dragostemelie.go.ro/stories/${article.slugname}`}
+      />
       <PublicLayout>
         <Article {...article} />;
         <Spacer height="48px" />

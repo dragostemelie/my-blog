@@ -1,8 +1,7 @@
-import Head from "next/head";
-
 import articles from "data/articles.json";
 import { Article } from "components/Cards/Article";
 import { ArticleType } from "types";
+import { PageHead } from "components/Head";
 import { PublicLayout } from "components/Layouts";
 import { Spacer } from "components/UI/Spacer";
 
@@ -13,17 +12,7 @@ interface IProps {
 const Home = ({ articles }: IProps) => {
   return (
     <>
-      <Head>
-        <title>t.D. | My Blog</title>
-        <meta
-          name="description"
-          content="A blog with articles about web development and other things that interest me."
-        />
-        <meta
-          property="og:image"
-          content="https://dragostemelie.go.ro/images/articles/social-banner.jpg"
-        />
-      </Head>
+      <PageHead />
       <PublicLayout>
         <h1 style={{ textAlign: "center" }}>Stories</h1>
         <Spacer height="16px" />
