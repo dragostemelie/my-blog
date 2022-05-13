@@ -14,7 +14,7 @@ const Home = ({ articles }: IProps) => {
     <>
       <PageHead />
       <PublicLayout>
-        <h1 style={{ textAlign: "center" }}>Stories</h1>
+        <h1 style={{ textAlign: "center" }}>My stories</h1>
         <Spacer height="16px" />
         {articles.map((article) => {
           const props = {
